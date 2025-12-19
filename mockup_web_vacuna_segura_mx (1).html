@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VacunaSegura MX – Mockup</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f5f7fa; color: #222; }
+    header { background: #0b5ed7; color: white; padding: 1.5rem; }
+    header h1 { margin: 0; }
+    nav { background: #ffffff; padding: 1rem; display: flex; gap: 1rem; flex-wrap: wrap; }
+    nav a { text-decoration: none; color: #0b5ed7; font-weight: bold; }
+    main { padding: 2rem; }
+    section { background: white; border-radius: 8px; padding: 1.5rem; margin-bottom: 1.5rem; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    h2 { color: #0b5ed7; }
+    label { display: block; margin-top: 0.75rem; }
+    input, select, textarea { width: 100%; padding: 0.5rem; margin-top: 0.25rem; }
+    button { margin-top: 1rem; padding: 0.75rem 1.5rem; background: #0b5ed7; color: white; border: none; border-radius: 4px; cursor: pointer; }
+    footer { background: #222; color: white; text-align: center; padding: 1rem; }
+    .accessible { font-size: 1.1rem; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>VacunaSegura MX</h1>
+  <p>Plataforma incluyente para el registro y seguimiento de la vacunación COVID-19</p>
+</header>
+
+<nav>
+  <a href="#registro">Registro</a>
+  <a href="#vacunacion">Vacunación</a>
+  <a href="#seguimiento">Seguimiento</a>
+  <a href="#ayuda">Ayuda</a>
+</nav>
+
+<main>
+
+  <section id="registro">
+    <h2>Registro de Persona Vacunada</h2>
+    <form class="accessible">
+      <label>Nombre completo
+        <input type="text" placeholder="Ej. María López" />
+      </label>
+      <label>CURP
+        <input type="text" />
+      </label>
+      <label>Edad
+        <input type="number" />
+      </label>
+      <label>Teléfono de contacto
+        <input type="tel" />
+      </label>
+      <label>Lengua hablada
+        <select>
+          <option>Español</option>
+          <option>Lengua indígena</option>
+        </select>
+      </label>
+      <button type="button">Registrar</button>
+    </form>
+  </section>
+
+  <section id="vacunacion">
+    <h2>Datos de Vacunación</h2>
+    <label>Tipo de vacuna
+      <select>
+        <option>Pfizer</option>
+        <option>AstraZeneca</option>
+        <option>Sputnik V</option>
+      </select>
+    </label>
+    <label>Dosis
+      <select>
+        <option>Primera</option>
+        <option>Segunda</option>
+      </select>
+    </label>
+    <button type="button">Guardar datos</button>
+  </section>
+
+  <section id="seguimiento">
+    <h2>Seguimiento de Efectos Secundarios</h2>
+    <label>¿Presenta algún síntoma?
+      <textarea placeholder="Describa el malestar"></textarea>
+    </label>
+    <label>Nivel de riesgo
+      <select>
+        <option>Leve</option>
+        <option>Moderado</option>
+        <option>Grave</option>
+      </select>
+    </label>
+    <button type="button">Enviar reporte</button>
+  </section>
+
+  <section id="graficas">
+    <h2>📊 Gráficas, Análisis y Semáforo de Riesgo</h2>
+    <p>Este módulo permite monitorear el avance de la vacunación por centro, identificar riesgos y apoyar la toma de decisiones.</p>
+
+    <h3>Avance por centro de vacunación</h3>
+    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap:1rem;">
+      <div style="background:#eef3fb; padding:1rem; border-radius:8px;">
+        <strong>Centro A</strong>
+        <div style="background:#cfe2ff; height:16px; margin-top:0.5rem;">
+          <div style="background:#0b5ed7; height:16px; width:70%;"></div>
+        </div>
+        <small>70% vacunación</small>
+      </div>
+      <div style="background:#eef3fb; padding:1rem; border-radius:8px;">
+        <strong>Centro B</strong>
+        <div style="background:#cfe2ff; height:16px; margin-top:0.5rem;">
+          <div style="background:#0b5ed7; height:16px; width:55%;"></div>
+        </div>
+        <small>55% vacunación</small>
+      </div>
+      <div style="background:#eef3fb; padding:1rem; border-radius:8px;">
+        <strong>Centro C</strong>
+        <div style="background:#cfe2ff; height:16px; margin-top:0.5rem;">
+          <div style="background:#0b5ed7; height:16px; width:85%;"></div>
+        </div>
+        <small>85% vacunación</small>
+      </div>
+    </div>
+
+    <h3 style="margin-top:1.5rem;">🚦 Semáforo de riesgo sanitario</h3>
+    <ul style="list-style:none; padding:0;">
+      <li>🟢 <strong>Riesgo bajo:</strong> Efectos leves predominantes (78%)</li>
+      <li>🟡 <strong>Riesgo medio:</strong> Requiere seguimiento (18%)</li>
+      <li>🔴 <strong>Riesgo alto:</strong> Atención médica inmediata (4%)</li>
+    </ul>
+
+    <h3>Análisis estratégico</h3>
+    <p>Los centros con menor avance reciben refuerzo de brigadas y comunicación. El semáforo de riesgo permite priorizar recursos médicos y fortalecer la atención preventiva, asegurando una respuesta rápida y eficiente.</p>
+  </section>
+
+  <section id="ayuda">
+
+  <section id="residuos">
+    <h2>♻️ Control y Manejo de Residuos (Cero Residuos)</h2>
+    <p>Este módulo muestra cómo se identifican, reducen y controlan los residuos generados durante el proceso de vacunación, cumpliendo con la política de <strong>Cero Residuos</strong>.</p>
+
+    <h3>Identificación de residuos</h3>
+    <ul>
+      <li>💉 Material médico (jeringas y empaques)</li>
+      <li>🧤 Equipos de protección biodegradables</li>
+      <li>📄 Papelería mínima de respaldo</li>
+      <li>📦 Empaques de insumos y proveedores</li>
+    </ul>
+
+    <h3>Gestión responsable</h3>
+    <ul>
+      <li>♻️ Separación desde el origen</li>
+      <li>📉 Reducción mediante registro digital</li>
+      <li>🔁 Reutilización de señalética</li>
+      <li>🏭 Canalización a reciclaje especializado</li>
+    </ul>
+
+    <h3>Control de límites</h3>
+    <p><strong>Centros de vacunación:</strong> Máximo 150 kg de residuos</p>
+    <div style="background:#cfe2ff; height:16px;">
+      <div style="background:#0b5ed7; height:16px; width:70%;"></div>
+    </div>
+    <small>Uso actual estimado: 70%</small>
+
+    <p style="margin-top:1rem;"><strong>Proveedores:</strong> Máximo 80 kg de residuos</p>
+    <div style="background:#cfe2ff; height:16px;">
+      <div style="background:#084298; height:16px; width:60%;"></div>
+    </div>
+    <small>Uso actual estimado: 60%</small>
+
+    <p style="margin-top:1rem;">La plataforma digital reduce significativamente el uso de papel y evita duplicidad de registros, contribuyendo directamente al cumplimiento de la política ambiental.</p>
+  </section>
+
+</main>
+
+<footer>
+  <p>VacunaSegura MX © 2025 | Gobierno de México</p>
+</footer>
+
+</body>
+</html>
